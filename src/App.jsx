@@ -150,6 +150,11 @@ export default function App() {
                   <span key={t} style={{ fontSize: 10, color: GOLD, background: `${GOLD}18`, border: `1px solid ${GOLD}33`, borderRadius: 4, padding: "2px 7px" }}>{t}</span>
                 ))}
               </div>
+              {p.url && (
+                <a href={p.url} target="_blank" rel="noreferrer" style={{ fontSize: 12, fontWeight: 700, color: GOLD, textDecoration: "none", marginTop: 4 }}>
+                  View Live ↗
+                </a>
+              )}
             </div>
           ))}
         </div>
