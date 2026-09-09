@@ -19,8 +19,8 @@ const achievements = [
 ];
 
 const projects = [
-  { title: "PDQ Layout Planner", desc: "Interactive retail display planner for sizing and arranging product assortments within PDQ trays and baskets. Supports auto-arrangement, weight tracking, drag-and-drop positioning, and XLSX export.", tags: ["React", "Supply Chain", "Retail Planning", "Operations"], status: "live" },
-  { title: "Python Reporting Automation", desc: "Automated weekly supply chain reporting pipeline using Pandas and OpenPyXL, consolidating ERP data exports into structured operational summaries.", tags: ["Python", "Pandas", "OpenPyXL", "Sage X3"], status: "pro" },
+  { title: "PDQ Layout Planner", desc: "Interactive retail display planner for sizing and arranging product assortments within PDQ trays and baskets. Supports auto-arrangement, weight tracking, drag-and-drop positioning, and XLSX/PDF export.", tags: ["React", "Supply Chain", "Retail Planning", "Operations"], status: "live", url: "https://pdq-layout-planner.vercel.app/" },
+  { title: "SC Planning Hub", desc: "A Python pipeline that consolidates ERP exports and supplier trackers into three weekly reports: stockout risk, cross-supplier supply timing, and inventory status.", tags: ["Python", "Pandas", "OpenPyXL", "Data Pipeline"], status: "live", url: "https://sc-planning-hub.vercel.app/" },
   { title: "PO Plan Workbook (DDMRP)", desc: "Demand-Driven MRP buffer and net-flow planning system built in Excel, bridging procurement planning ahead of a full MRP implementation.", tags: ["Excel", "DDMRP", "Sage X3", "Planning"], status: "pro" },
   { title: "Subcontract Component Planner", desc: "End-to-end planning system coordinating component transfers, subcontract PO lifecycle, and kit readiness across internal teams and co-pack vendors.", tags: ["Excel", "VBA", "Supply Chain", "Vendor Mgmt"], status: "pro" },
 ];
