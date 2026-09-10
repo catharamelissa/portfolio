@@ -58,6 +58,9 @@ export default function App() {
               {s}
             </button>
           ))}
+          <a href="/resume.html" target="_blank" rel="noreferrer" style={{ fontSize: 13, fontWeight: 700, color: GOLD, textDecoration: "none" }}>
+            Resume
+          </a>
           <a href="mailto:catharawigley@outlook.com" style={{ padding: "7px 16px", background: GOLD, color: "#fff", borderRadius: 6, fontSize: 12, fontWeight: 700, textDecoration: "none" }}>
             Contact
           </a>
@@ -81,6 +84,9 @@ export default function App() {
             <button onClick={() => scrollTo("projects")} style={{ padding: "13px 28px", background: NAV, color: "#fff", border: "none", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>
               View My Work
             </button>
+            <a href="/resume.html" target="_blank" rel="noreferrer" style={{ padding: "13px 28px", background: GOLD, color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: "none" }}>
+              View Resume
+            </a>
             <a href="https://linkedin.com/in/catharawigley" target="_blank" rel="noreferrer" style={{ padding: "13px 28px", background: "transparent", color: "#fff", border: `1.5px solid ${NAV}99`, borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: "none" }}>
               LinkedIn ↗
             </a>
