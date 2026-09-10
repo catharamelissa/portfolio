@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cathara Wigley — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
+<style>
+  :root{ --navy:#1B3D6E; --gold:#B8892A; --ink:#1a2233; --muted:#5a6478; --line:#dde3ee; }
+  *{box-sizing:border-box}
+  body{ margin:0; background:#eef1f6; font-family:'Lato',sans-serif; color:var(--ink); }
+  .page{ max-width:850px; margin:0 auto; background:#fff; padding:52px 60px 60px; box-shadow:0 4px 30px rgba(20,30,55,.08); }
+  .toolbar{ max-width:850px; margin:0 auto; padding:14px 60px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .toolbar a, .toolbar button{ font-family:'Lato',sans-serif; font-size:13px; font-weight:700; padding:9px 18px; border-radius:7px; border:none; cursor:pointer; text-decoration:none; }
+  .btn-gold{ background:var(--gold); color:#fff; }
+  .btn-navy{ background:transparent; color:var(--navy); border:1.5px solid var(--navy) !important; }
+  .btn-back{ color:var(--muted); font-size:13px; text-decoration:none; }
+
+  h1{ font-size:30px; font-weight:900; color:var(--navy); margin:0 0 4px; letter-spacing:-.01em; }
+  .title{ font-size:14px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.06em; margin:0 0 14px; }
+  .contact{ display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); border-bottom:2px solid var(--navy); padding-bottom:16px; margin-bottom:22px; }
+  .contact a{ color:var(--navy); text-decoration:none; font-weight:700; }
+  .contact span.sep{ color:var(--line); }
+
+  h2{ font-size:13px; font-weight:900; color:var(--navy); text-transform:uppercase; letter-spacing:.08em; border-bottom:1.5px solid var(--gold); padding-bottom:5px; margin:26px 0 12px; }
+  .summary{ font-size:13.5px; line-height:1.7; color:#333; margin:0 0 4px; }
+
+  .core-skills{ display:flex; flex-wrap:wrap; gap:8px 20px; font-size:12.5px; color:#333; }
+  .core-skills span::before{ content:"◆ "; color:var(--gold); }
+
+  .proj-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; margin-top:6px; }
+  .proj{ font-size:12.5px; line-height:1.55; }
+  .proj b{ color:var(--navy); }
+  .proj a{ color:var(--gold); text-decoration:none; font-weight:700; }
+  .proj a:hover{ text-decoration:underline; }
+  .proj p{ margin:3px 0 0; color:#444; }
+
+  .job{ margin-bottom:18px; }
+  .job-head{ display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px; }
+  .job-co{ font-size:14.5px; font-weight:900; color:var(--ink); }
+  .job-loc{ font-size:12px; color:var(--muted); font-weight:400; }
+  .job-role{ font-size:13px; font-weight:700; color:var(--gold); margin-top:1px; }
+  .job-dates{ font-size:12px; color:var(--muted); font-weight:700; white-space:nowrap; }
+  ul.bullets{ margin:8px 0 0; padding-left:18px; }
+  ul.bullets li{ font-size:12.5px; line-height:1.65; color:#333; margin-bottom:4px; }
+  ul.bullets li a{ color:var(--gold); text-decoration:none; font-weight:700; }
+  ul.bullets li a:hover{ text-decoration:underline; }
+
+  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:0 30px; }
+  .cert-list, .edu-list{ font-size:12.5px; line-height:1.8; color:#333; }
+  .cert-list span::before{ content:"◆ "; color:var(--gold); }
+
+  @media print{
+    body{ background:#fff; }
+    .toolbar{ display:none; }
+    .page{ box-shadow:none; padding:30px 40px; max-width:100%; }
+    a{ color:var(--navy) !important; }
+  }
+  @media (max-width:700px){
+    .page{ padding:32px 22px; }
+    .proj-grid, .two-col{ grid-template-columns:1fr; }
+    .toolbar{ padding:14px 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a class="btn-back" href="/">← Back to Portfolio</a>
+  <div style="display:flex; gap:10px;">
+    <button class="btn-navy" onclick="window.print()">Download / Print PDF</button>
+    <a class="btn-gold" href="mailto:catharawigley@outlook.com">Contact Me</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <h1>Cathara Wigley</h1>
+  <div class="title">Supply Chain Operations &amp; Systems</div>
+  <div class="contact">
+    <span>Dallas–Fort Worth, TX</span><span class="sep">·</span>
+    <span>817-690-4443</span><span class="sep">·</span>
+    <a href="mailto:catharawigley@outlook.com">catharawigley@outlook.com</a><span class="sep">·</span>
+    <a href="https://linkedin.com/in/catharawigley" target="_blank" rel="noreferrer">LinkedIn ↗</a><span class="sep">·</span>
+    <a href="/" target="_blank" rel="noreferrer">Portfolio ↗</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Operations professional with 15+ years building structure in fast-moving, undefined environments across supply chain, manufacturing, and business operations. Known for identifying where processes break down and designing practical solutions teams actually adopt — including the interactive planning tools linked throughout this resume, all viewable on my <a href="/" target="_blank" rel="noreferrer" style="color:var(--gold); font-weight:700; text-decoration:none;">portfolio</a>.
+  </p>
+
+  <h2>Core Skills</h2>
+  <div class="core-skills">
+    <span>Business Operations &amp; Process Improvement</span>
+    <span>Workflow Design &amp; SOP Development</span>
+    <span>Cross-Functional Coordination</span>
+    <span>Operational Reporting &amp; Data Visibility</span>
+    <span>Inventory Planning &amp; Supply Chain Ops</span>
+    <span>ERP Systems (Sage X3, Dynamics 365, AS400)</span>
+    <span>Excel, VBA, Python &amp; AI-Assisted Workflows</span>
+  </div>
+
+  <h2>Featured Projects</h2>
+  <div class="proj-grid">
+    <div class="proj">
+      <b>PDQ Layout Planner</b> — <a href="https://pdq-layout-planner.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
+      <p>Interactive retail display planner for sizing and arranging product assortments within trays and baskets.</p>
+    </div>
+    <div class="proj">
+      <b>SC Planning Hub</b> — <a href="https://sc-planning-hub.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
+      <p>Python pipeline consolidating ERP exports into weekly stockout-risk and supply-timing reports.</p>
+    </div>
+    <div class="proj">
+      <b>PO Plan Workbook (DDMRP)</b> — <a href="https://ddmrp-demo.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
+      <p>Demand-driven buffer and net-flow planning system, demoed live across a sample SKU portfolio.</p>
+    </div>
+    <div class="proj">
+      <b>Subcontract Component Planner</b> — <a href="https://subcontract-planner.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
+      <p>Coordination system for component transfers and subcontract PO lifecycle with co-pack vendors.</p>
+    </div>
+  </div>
+
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="job-co">Naterra International, Inc. — Fort Worth, TX</div>
+        <div class="job-role">Supply Chain Execution Planner (Business Systems Focus)</div>
+      </div>
+      <div class="job-dates">2026 – Present</div>
+    </div>
+    <ul class="bullets">
+      <li>Redesign purchasing and subcontract workflows to improve cross-functional accountability and eliminate manual handoffs — see the <a href="https://subcontract-planner.vercel.app/" target="_blank" rel="noreferrer">Subcontract Component Planner</a>.</li>
+      <li>Built centralized inventory planning and reconciliation tools; identified overlooked data sources that improved reporting accuracy and information flow.</li>
+      <li>Developed a demand-driven buffer and net-flow planning system ahead of MRP rollout — live demo: <a href="https://ddmrp-demo.vercel.app/" target="_blank" rel="noreferrer">PO Plan Workbook (DDMRP)</a>.</li>
+      <li>Built an automated Python reporting pipeline consolidating ERP exports into weekly operational reports — see the <a href="https://sc-planning-hub.vercel.app/" target="_blank" rel="noreferrer">SC Planning Hub</a>.</li>
+      <li>Designed an interactive retail display layout tool used for sizing and arranging product assortments — see the <a href="https://pdq-layout-planner.vercel.app/" target="_blank" rel="noreferrer">PDQ Layout Planner</a>.</li>
+      <li>Managed full subcontractor PO lifecycle — creation, tracking, closure, and invoice reconciliation; coordinated procurement and supplier relationships.</li>
+      <li>Recognized for systems thinking and promoted to expanded operations role within first year.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="job-co">Park 100 Foods / OSI Group — Fort Worth, TX</div>
+        <div class="job-role">Supply Chain Specialist</div>
+      </div>
+      <div class="job-dates">2021 – 2025</div>
+    </div>
+    <ul class="bullets">
+      <li>Built all supply chain and operational processes from scratch at plant opening — inventory, procurement, logistics, and carrier network — before operations scaled.</li>
+      <li>Designed a new freight pool solution creating a reliable logistics network where none previously existed; managed 3PL, LTL, FTL, and multi-stop shipment coordination.</li>
+      <li>Led cross-functional initiatives with production, sales, QA, and R&amp;D — improved perishable handling, quality control, and new product launch workflows.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="job-co">Biagi Bros — Hutchins, TX</div>
+        <div class="job-role">Transportation Supervisor</div>
+      </div>
+      <div class="job-dates">2014 – 2021</div>
+    </div>
+    <ul class="bullets">
+      <li>Scaled operations from 3 drivers / 8 carriers to 23 drivers / 20 carriers; negotiated carrier rates reducing transportation budget by 5%.</li>
+      <li>Built Excel-based operational systems — 98% accuracy improvement, 25–50% processing time reduction, eliminated all paper documentation across order management and carrier coordination.</li>
+      <li>Led SAP rollout — built SOPs, training documentation, and change management materials; managed DOT compliance for full driver fleet.</li>
+      <li>Redesigned workflows across 3 departments — new SOPs and training materials eliminated 100% of administrative overtime.</li>
+    </ul>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <span>CSCMP Supply Chain Foundations</span><br>
+        <span>Lean Six Sigma Foundations</span><br>
+        <span>Process Improvement Foundations</span><br>
+        <span>Financial Forecasting with Analytics</span><br>
+        <span>Excel: Value Stream Mapping</span>
+      </div>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <div class="edu-list">
+        University of Phoenix &amp; AIU Online — Business Administration coursework, 2010–2014<br>
+        Craven Community College — 2007–2008<br>
+        Weatherford High School — Diploma, 2004
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
