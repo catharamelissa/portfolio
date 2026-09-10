@@ -26,8 +26,8 @@
   h2{ font-size:13px; font-weight:900; color:var(--navy); text-transform:uppercase; letter-spacing:.08em; border-bottom:1.5px solid var(--gold); padding-bottom:5px; margin:26px 0 12px; }
   .summary{ font-size:13.5px; line-height:1.7; color:#333; margin:0 0 4px; }
 
-  .core-skills{ display:flex; flex-wrap:wrap; gap:8px 20px; font-size:12.5px; color:#333; }
-  .core-skills span::before{ content:"◆ "; color:var(--gold); }
+  .core-skills{ display:flex; flex-direction:column; gap:7px; font-size:12.5px; color:#333; }
+  .core-skills div b{ color:var(--navy); }
 
   .proj-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; margin-top:6px; }
   .proj{ font-size:12.5px; line-height:1.55; }
@@ -39,7 +39,6 @@
   .job{ margin-bottom:18px; }
   .job-head{ display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px; }
   .job-co{ font-size:14.5px; font-weight:900; color:var(--ink); }
-  .job-loc{ font-size:12px; color:var(--muted); font-weight:400; }
   .job-role{ font-size:13px; font-weight:700; color:var(--gold); margin-top:1px; }
   .job-dates{ font-size:12px; color:var(--muted); font-weight:700; white-space:nowrap; }
   ul.bullets{ margin:8px 0 0; padding-left:18px; }
@@ -77,7 +76,7 @@
 <div class="page">
 
   <h1>Cathara Wigley</h1>
-  <div class="title">Supply Chain Operations &amp; Systems</div>
+  <div class="title">Supply Chain Planner | Inventory Planning &amp; Operations</div>
   <div class="contact">
     <span>Dallas–Fort Worth, TX</span><span class="sep">·</span>
     <span>817-690-4443</span><span class="sep">·</span>
@@ -88,18 +87,15 @@
 
   <h2>Summary</h2>
   <p class="summary">
-    Supply chain and operations professional with 15+ years spanning inventory planning, demand-driven replenishment, subcontract and vendor management, ERP execution, and process automation. I step into undefined or broken systems, identify where they break down, and build practical tools and workflows teams adopt and depend on — several of which are viewable on my <a href="/" target="_blank" rel="noreferrer" style="color:var(--gold); font-weight:700; text-decoration:none;">portfolio</a>. Open to remote and hybrid supply chain planning, inventory planning, and operations roles.
+    Supply chain planning professional with 15+ years spanning inventory planning, demand-driven replenishment, purchase order and vendor management, ERP execution, and process automation. I step into undefined or broken systems, identify where they break down, and build practical planning tools and workflows teams adopt and depend on — several of which are viewable on my <a href="/" target="_blank" rel="noreferrer" style="color:var(--gold); font-weight:700; text-decoration:none;">portfolio</a>. Skilled with Sage X3, Dynamics 365, and AS400, with advanced Excel, SQL, and Python. Open to remote and hybrid supply chain planning, inventory planning, and operations roles.
   </p>
 
   <h2>Core Skills</h2>
   <div class="core-skills">
-    <span>Business Operations &amp; Process Improvement</span>
-    <span>Workflow Design &amp; SOP Development</span>
-    <span>Cross-Functional Coordination</span>
-    <span>Operational Reporting &amp; Data Visibility</span>
-    <span>Inventory Planning &amp; Supply Chain Ops</span>
-    <span>ERP Systems (Sage X3, Dynamics 365, AS400)</span>
-    <span>Excel, VBA, Python &amp; AI-Assisted Workflows</span>
+    <div><b>Inventory &amp; Planning:</b> Inventory Planning &amp; Replenishment, MRP, DDMRP Buffer Design, Demand Planning Support, Safety Stock, DOH, WOS, Fill Rate Tracking</div>
+    <div><b>Systems &amp; Analytics:</b> Sage X3, Dynamics 365 Business Central, Dynamics AX / NAV, AS400, JD Edwards OneWorld, Python (Pandas, OpenPyXL), SQL (SSMS), Advanced Excel (Power Query, VBA, Power Pivot)</div>
+    <div><b>Procurement &amp; Operations:</b> Purchase Order Lifecycle, Vendor &amp; Supplier Management, Carrier &amp; Broker Procurement, Rate Negotiation, Inventory Control, Supply Risk Identification</div>
+    <div><b>Process Improvement:</b> SOP Development, Workflow Design, Cross-Functional Coordination, Operational Reporting, Continuous Improvement, Lean Six Sigma</div>
   </div>
 
   <h2>Featured Projects</h2>
@@ -110,15 +106,15 @@
     </div>
     <div class="proj">
       <b>SC Planning Hub</b> — <a href="https://sc-planning-hub.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
-      <p>Python pipeline consolidating ERP exports into weekly stockout-risk and supply-timing reports.</p>
+      <p>Python pipeline consolidating ERP exports and supplier trackers into three weekly operational reports.</p>
     </div>
     <div class="proj">
       <b>PO Plan Workbook (DDMRP)</b> — <a href="https://ddmrp-demo.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
-      <p>Demand-driven buffer and net-flow planning system, demoed live across a sample SKU portfolio.</p>
+      <p>Demand-driven buffer and net-flow planning system that generates buy-list and purchase order recommendations.</p>
     </div>
     <div class="proj">
       <b>Subcontract Component Planner</b> — <a href="https://subcontract-planner.vercel.app/" target="_blank" rel="noreferrer">View Live ↗</a>
-      <p>Coordination system for component transfers and subcontract PO lifecycle with co-pack vendors.</p>
+      <p>Coordination system for component transfers and subcontract purchase order lifecycle with co-pack vendors.</p>
     </div>
   </div>
 
@@ -128,19 +124,19 @@
     <div class="job-head">
       <div>
         <div class="job-co">Naterra International, Inc. — Fort Worth, TX</div>
-        <div class="job-role">Supply Chain Execution Planner (Business Systems Focus)</div>
+        <div class="job-role">Supply Chain Execution Planner (Apr 2026 – Present) · Supply Chain Specialist (Oct 2025 – Apr 2026)</div>
       </div>
-      <div class="job-dates">2026 – Present</div>
+      <div class="job-dates">2025 – Present</div>
     </div>
     <ul class="bullets">
-      <li>Resumed ownership of the subcontract planning process — coordinating component transfers, subcontract PO lifecycle, and kit/PDQ readiness with co-pack vendors. See the <a href="https://subcontract-planner.vercel.app/" target="_blank" rel="noreferrer">Subcontract Component Planner</a>.</li>
-      <li>Continue placing supplier orders for LTOs, promotional programs, and new item launches, while day-to-day replenishment ordering now runs on the planning tools built during this role — see the <a href="https://ddmrp-demo.vercel.app/" target="_blank" rel="noreferrer">PO Plan Workbook (DDMRP)</a>.</li>
-      <li>Built centralized inventory planning and reconciliation tools; identified overlooked data sources that improved reporting accuracy and information flow.</li>
-      <li>Developed a demand-driven buffer and net-flow planning system, now used by the team for standing replenishment ahead of MRP rollout — live demo linked above.</li>
-      <li>Built an automated Python reporting pipeline consolidating ERP exports into weekly operational reports — see the <a href="https://sc-planning-hub.vercel.app/" target="_blank" rel="noreferrer">SC Planning Hub</a>.</li>
-      <li>Designed an interactive retail display layout tool used for sizing and arranging product assortments — see the <a href="https://pdq-layout-planner.vercel.app/" target="_blank" rel="noreferrer">PDQ Layout Planner</a>.</li>
-      <li>Managed full subcontractor PO lifecycle — creation, tracking, closure, and invoice reconciliation; coordinated procurement and supplier relationships.</li>
-      <li>Recognized for systems thinking and promoted to expanded operations role within first year.</li>
+      <li>Design and maintain MRP-driven planning tools, inventory trackers, and reporting systems that improve supply visibility and reduce manual coordination across teams.</li>
+      <li>Own the subcontract component planning process end to end, coordinating component transfers with co-pack vendors, with a master planning view and automated SKU-level risk flagging. See the <a href="https://subcontract-planner.vercel.app/" target="_blank" rel="noreferrer">Subcontract Component Planner</a>.</li>
+      <li>Place supplier orders for LTOs, promotional programs, and new item launches; standing replenishment ordering runs on the demand-driven planning tools built during this role. See the <a href="https://ddmrp-demo.vercel.app/" target="_blank" rel="noreferrer">PO Plan Workbook (DDMRP)</a>.</li>
+      <li>Designed a DDMRP buffer and net-flow planning system for supplier purchase ordering, replacing a flat reorder-point spreadsheet with red/yellow/green buffer zones sized to each SKU's demand rate and lead time.</li>
+      <li>Architected a hub-and-spoke data model consolidating duplicate Sage X3 data ingestion across planning workbooks into a single automated data hub, eliminating manual paste work and calculation drift.</li>
+      <li>Built Python reporting automation (Pandas, OpenPyXL) consolidating Sage X3 exports into stockout-risk, supply-timing, and inventory-status reports; became a pilot use case for a broader Databricks migration. See the <a href="https://sc-planning-hub.vercel.app/" target="_blank" rel="noreferrer">SC Planning Hub</a>.</li>
+      <li>Built a centralized inventory planning workbook from scratch, integrating on-hand, allocated, forecasted, and actual data to give leadership real-time supply visibility that did not previously exist.</li>
+      <li>Self-taught the Sage X3 ERP system and now train other team members on it; promoted within the first year.</li>
     </ul>
   </div>
 
@@ -150,12 +146,14 @@
         <div class="job-co">Park 100 Foods / OSI Group — Fort Worth, TX</div>
         <div class="job-role">Supply Chain Specialist</div>
       </div>
-      <div class="job-dates">2021 – 2025</div>
+      <div class="job-dates">Jul 2021 – Oct 2025</div>
     </div>
     <ul class="bullets">
-      <li>Built all supply chain and operational processes from scratch at plant opening — inventory, procurement, logistics, and carrier network — before operations scaled.</li>
-      <li>Designed a new freight pool solution creating a reliable logistics network where none previously existed; managed 3PL, LTL, FTL, and multi-stop shipment coordination.</li>
-      <li>Led cross-functional initiatives with production, sales, QA, and R&amp;D — improved perishable handling, quality control, and new product launch workflows.</li>
+      <li>Managed ingredient and packaging inventory across multiple warehouse locations; monitored safety stock, days on hand, and reorder parameters against production schedules to maintain continuity and minimize waste.</li>
+      <li>Built all supply chain processes from scratch at plant opening, establishing inventory, procurement, logistics, and carrier frameworks before operations scaled.</li>
+      <li>Designed a new freight pool solution (OTR, LTL, FTL, reefer, dry van, multi-stop) creating a reliable logistics network where none previously existed.</li>
+      <li>Executed purchase orders and coordinated supplier deliveries while maintaining quality documentation, COA compliance, and vendor performance accountability.</li>
+      <li>Led cross-functional improvement initiatives with production, sales, QA, and R&amp;D, improving perishable handling, quality control, and new product launch workflows.</li>
     </ul>
   </div>
 
@@ -163,15 +161,32 @@
     <div class="job-head">
       <div>
         <div class="job-co">Biagi Bros — Hutchins, TX</div>
-        <div class="job-role">Transportation Supervisor</div>
+        <div class="job-role">Transportation Supervisor (Promoted from Administrative Assistant)</div>
       </div>
-      <div class="job-dates">2014 – 2021</div>
+      <div class="job-dates">Jul 2014 – Jul 2021</div>
     </div>
     <ul class="bullets">
-      <li>Scaled operations from 3 drivers / 8 carriers to 23 drivers / 20 carriers; negotiated carrier rates reducing transportation budget by 5%.</li>
-      <li>Built Excel-based operational systems — 98% accuracy improvement, 25–50% processing time reduction, eliminated all paper documentation across order management and carrier coordination.</li>
-      <li>Led SAP rollout — built SOPs, training documentation, and change management materials; managed DOT compliance for full driver fleet.</li>
-      <li>Redesigned workflows across 3 departments — new SOPs and training materials eliminated 100% of administrative overtime.</li>
+      <li>Grew operations from 3 to 23 drivers and 8 to 20 carriers across two warehouse locations while maintaining service levels and DOT compliance.</li>
+      <li>Managed 120–230 daily shipments across 15+ carriers and 100+ distribution warehouses; served as the primary escalation point for shipping, inventory, and vendor issues.</li>
+      <li>Built Excel-based systems for order management, driver check-in, and carrier tendering, improving accuracy by 98% and reducing processing time by 25–50%, eliminating all paper documentation.</li>
+      <li>Served as a pilot-site contributor for the Dynamics 365 Business Central transition and multiple warehouse management system rollouts, working with IT on setup, live execution, and post-launch fixes.</li>
+      <li>Redesigned transportation, inventory, and billing workflows that eliminated 100% of administrative overtime and reduced transportation costs by 5% through carrier rate negotiation.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="job-co">Biagi Bros — Arlington, TX</div>
+        <div class="job-role">Administrative Assistant</div>
+      </div>
+      <div class="job-dates">Nov 2010 – Apr 2012</div>
+    </div>
+    <ul class="bullets">
+      <li>Coordinated inbound and outbound shipments including carrier scheduling, data entry, and communication with distribution warehouses to resolve operational issues.</li>
+      <li>Investigated inventory discrepancies across multiple systems and resolved shipment and inventory problems through cross-functional data analysis.</li>
+      <li>Processed accounts payable and accounts receivable for high-volume transportation activity, maintaining accuracy across daily transactions.</li>
+      <li>Developed and documented new office procedures that improved accuracy, consistency, and efficiency; trained new staff on updated workflows.</li>
     </ul>
   </div>
 
@@ -183,15 +198,17 @@
         <span>Lean Six Sigma Foundations</span><br>
         <span>Process Improvement Foundations</span><br>
         <span>Financial Forecasting with Analytics</span><br>
-        <span>Excel: Value Stream Mapping</span>
+        <span>Excel: Value Stream Mapping</span><br>
+        <span>Learning Industrial Automation</span>
       </div>
     </div>
     <div>
       <h2>Education</h2>
       <div class="edu-list">
-        University of Phoenix &amp; AIU Online — Business Administration coursework, 2010–2014<br>
-        Craven Community College — 2007–2008<br>
-        Weatherford High School — Diploma, 2004
+        <b>University of Phoenix</b> — Business Administration<br>18 credits, 2012–2013<br><br>
+        <b>AIU Online</b> — Business Administration<br>37.5 credits, 2010–2011 &amp; 2014<br><br>
+        <b>Craven Community College</b> — Business Administration<br>42 credits, 2007–2008<br><br>
+        <b>Weatherford High School</b> — Diploma, 2004
       </div>
     </div>
   </div>
