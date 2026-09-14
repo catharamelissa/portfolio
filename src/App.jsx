@@ -77,8 +77,11 @@ export default function App() {
           <h1 style={{ fontSize: "clamp(38px, 6vw, 64px)", fontWeight: 800, color: "#fff", margin: "0 0 16px", lineHeight: 1.1 }}>
             Cathara Wigley
           </h1>
-          <p style={{ fontSize: "clamp(15px, 2vw, 19px)", color: MUTED, lineHeight: 1.8, margin: "0 0 40px" }}>
-            15+ years building the tools, processes, and structure that make supply chains work, from plant launches to ERP implementations to Python-powered automation.
+          <p style={{ fontSize: "clamp(16px, 2.2vw, 21px)", color: "#fff", fontWeight: 600, lineHeight: 1.5, margin: "0 0 14px" }}>
+            I build the processes, reporting, and systems that make messy supply chains easier to run.
+          </p>
+          <p style={{ fontSize: "clamp(14px, 1.8vw, 17px)", color: MUTED, lineHeight: 1.7, margin: "0 0 40px" }}>
+            15+ years turning fragmented, manual processes into scalable tools and workflows across manufacturing, distribution, and CPG.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 60 }}>
             <button onClick={() => scrollTo("projects")} style={{ padding: "13px 28px", background: NAV, color: "#fff", border: "none", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>
@@ -92,7 +95,7 @@ export default function App() {
             </a>
           </div>
           <div style={{ display: "flex", gap: 48, justifyContent: "center", flexWrap: "wrap" }}>
-            {[["15+", "Years Experience"], ["8+", "ERP Systems"], ["3", "Industries"], ["100s", "Processes Built"]].map(([n, l]) => (
+            {[["15+", "Years Experience"], ["8+", "ERP Systems"], ["3", "Industries"], ["4", "Live Tools Built"]].map(([n, l]) => (
               <div key={l}>
                 <div style={{ fontSize: 30, fontWeight: 800, color: GOLD }}>{n}</div>
                 <div style={{ fontSize: 11, color: MUTED, marginTop: 4, textTransform: "uppercase", letterSpacing: 0.5 }}>{l}</div>
@@ -106,14 +109,14 @@ export default function App() {
       <section id="about" style={{ padding: "80px 32px", maxWidth: 900, margin: "0 auto" }}>
         <Label>About</Label>
         <h2 style={{ fontSize: "clamp(22px, 3.5vw, 34px)", fontWeight: 700, color: "#fff", margin: "12px 0 32px" }}>
-          I step into broken systems and build what's missing.
+          Give me the broken spreadsheet, the tangled ERP, and the process everyone's just accepted as terrible. I'll make it make sense.
         </h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 28 }}>
           <p style={{ color: MUTED, lineHeight: 1.85, fontSize: 14, margin: 0 }}>
-            My career has been defined by one pattern: walking into environments where the processes don't exist yet — or exist but aren't working — and building the structure that lets operations scale. That's happened at a plant launch, an ERP rollout, a transportation operation, and now in supply chain planning.
+            My career follows one pattern: walk into a place where the process doesn't exist yet, or exists but is quietly failing, figure out where it breaks, and build the structure that makes it work and keeps working. That's played out at a plant launch, an ERP rollout, a transportation operation, and now across supply chain planning.
           </p>
           <p style={{ color: MUTED, lineHeight: 1.85, fontSize: 14, margin: 0 }}>
-            I'm currently a Supply Chain Execution Planner based in the Dallas-Fort Worth area, where I've self-taught ERP systems, built Python automation pipelines, and designed planning tools teams now depend on. I'm open to remote and hybrid opportunities.
+            I'm currently a Supply Chain Execution Planner in the Dallas-Fort Worth area, where I self-taught our ERP system, built Python automation that replaced a manual weekly reporting grind, and designed planning tools the team now depends on. I do my best work where structure has to be created, not inherited. Open to remote and hybrid roles.
           </p>
         </div>
       </section>
@@ -150,7 +153,20 @@ export default function App() {
                 {p.status === "live" ? "● Live" : "Professional Project"}
               </span>
               <h3 style={{ fontSize: 17, fontWeight: 700, color: "#fff", margin: 0 }}>{p.title}</h3>
-              <p style={{ fontSize: 13, color: MUTED, lineHeight: 1.75, margin: 0, flex: 1 }}>{p.desc}</p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
+                <div>
+                  <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.8, color: GOLD, marginBottom: 3 }}>Problem</div>
+                  <p style={{ fontSize: 12.5, color: MUTED, lineHeight: 1.65, margin: 0 }}>{p.problem}</p>
+                </div>
+                <div>
+                  <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.8, color: GOLD, marginBottom: 3 }}>What I Built</div>
+                  <p style={{ fontSize: 12.5, color: MUTED, lineHeight: 1.65, margin: 0 }}>{p.solution}</p>
+                </div>
+                <div>
+                  <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.8, color: "#2a9d8f", marginBottom: 3 }}>Result</div>
+                  <p style={{ fontSize: 12.5, color: TEXT, lineHeight: 1.65, margin: 0 }}>{p.result}</p>
+                </div>
+              </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
                 {p.tags.map(t => (
                   <span key={t} style={{ fontSize: 10, color: GOLD, background: `${GOLD}18`, border: `1px solid ${GOLD}33`, borderRadius: 4, padding: "2px 7px" }}>{t}</span>
