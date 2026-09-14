@@ -68,7 +68,7 @@ export default function App() {
       </nav>
 
       {/* Hero */}
-      <section id="hero" style={{ minHeight: "92vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "60px 32px", textAlign: "center", position: "relative" }}>
+      <section id="hero" style={{ minHeight: "auto", display: "flex", alignItems: "center", justifyContent: "center", padding: "72px 32px 64px", textAlign: "center", position: "relative" }}>
         <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at 50% 40%, ${NAV}44 0%, transparent 68%)`, pointerEvents: "none" }} />
         <div style={{ maxWidth: 700, position: "relative" }}>
           <div style={{ display: "inline-block", background: `${GOLD}20`, border: `1px solid ${GOLD}55`, borderRadius: 20, padding: "5px 14px", fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: 1.2, textTransform: "uppercase", marginBottom: 24 }}>
@@ -78,7 +78,7 @@ export default function App() {
             Cathara Wigley
           </h1>
           <p style={{ fontSize: "clamp(15px, 2vw, 19px)", color: MUTED, lineHeight: 1.8, margin: "0 0 40px" }}>
-            15+ years building the tools, processes, and structure that make supply chains work — from plant launches to ERP implementations to Python-powered automation.
+            15+ years building the tools, processes, and structure that make supply chains work, from plant launches to ERP implementations to Python-powered automation.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 60 }}>
             <button onClick={() => scrollTo("projects")} style={{ padding: "13px 28px", background: NAV, color: "#fff", border: "none", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>
