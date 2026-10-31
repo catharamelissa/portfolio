@@ -48,11 +48,11 @@ export default function App() {
     <div style={{ background: BG, color: TEXT, fontFamily: "'Inter', system-ui, sans-serif", minHeight: "100vh" }}>
 
       {/* Nav */}
-      <nav style={{ position: "sticky", top: 0, zIndex: 100, background: "rgba(13,21,32,0.97)", borderBottom: `1px solid ${NAV}44`, padding: "0 32px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 56 }}>
+      <nav className="site-nav" style={{ position: "sticky", top: 0, zIndex: 100, background: "rgba(13,21,32,0.97)", borderBottom: `1px solid ${NAV}44`, padding: "0 32px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 56 }}>
         <div style={{ fontWeight: 800, color: "#fff", fontSize: 16, cursor: "pointer" }} onClick={() => scrollTo("hero")}>
           CW<span style={{ color: GOLD }}>.</span>
         </div>
-        <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
+        <div className="nav-links" style={{ display: "flex", gap: 24, alignItems: "center" }}>
           {["About", "Achievements", "Projects", "Skills"].map(s => (
             <button key={s} onClick={() => scrollTo(s.toLowerCase())} style={{ background: "none", border: "none", color: MUTED, cursor: "pointer", fontSize: 13, fontWeight: 500 }}>
               {s}
@@ -77,7 +77,7 @@ export default function App() {
           <h1 style={{ fontSize: "clamp(38px, 6vw, 64px)", fontWeight: 800, color: "#fff", margin: "0 0 16px", lineHeight: 1.1 }}>
             Cathara Wigley
           </h1>
-          <img src="/headshot.jpg" alt="Cathara Wigley" style={{ width: 240, height: 240, borderRadius: "50%", objectFit: "cover", objectPosition: "center top", border: `3px solid ${GOLD}`, display: "block", margin: "24px auto" }} />
+          <img className="headshot" src="/headshot.jpg" alt="Cathara Wigley" style={{ width: 240, height: 240, borderRadius: "50%", objectFit: "cover", objectPosition: "center top", border: `3px solid ${GOLD}`, display: "block", margin: "24px auto" }} />
           <p style={{ fontSize: "clamp(16px, 2.2vw, 21px)", color: "#fff", fontWeight: 600, lineHeight: 1.5, margin: "0 0 14px" }}>
             I build the processes, reporting, and systems that make messy supply chains easier to run.
           </p>
