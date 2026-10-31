@@ -77,7 +77,7 @@ export default function App() {
           <h1 style={{ fontSize: "clamp(38px, 6vw, 64px)", fontWeight: 800, color: "#fff", margin: "0 0 16px", lineHeight: 1.1 }}>
             Cathara Wigley
           </h1>
-          <img src="/headshot.jpg" alt="Cathara Wigley" style={{ width: 160, height: 160, borderRadius: "50%", objectFit: "cover", objectPosition: "center top", border: `3px solid ${GOLD}`, display: "block", margin: "24px auto" }} />
+          <img src="/headshot.jpg" alt="Cathara Wigley" style={{ width: 240, height: 240, borderRadius: "50%", objectFit: "cover", objectPosition: "center top", border: `3px solid ${GOLD}`, display: "block", margin: "24px auto" }} />
           <p style={{ fontSize: "clamp(16px, 2.2vw, 21px)", color: "#fff", fontWeight: 600, lineHeight: 1.5, margin: "0 0 14px" }}>
             I build the processes, reporting, and systems that make messy supply chains easier to run.
           </p>
